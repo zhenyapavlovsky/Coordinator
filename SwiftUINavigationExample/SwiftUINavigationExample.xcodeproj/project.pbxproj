@@ -20,6 +20,10 @@
 		8B1EB45B286B8F4D00D755AF /* RedCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1EB45A286B8F4D00D755AF /* RedCoordinator.swift */; };
 		8B1EB45D286B8F5800D755AF /* RedCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1EB45C286B8F5800D755AF /* RedCoordinatorView.swift */; };
 		8B7167A82875F0F6009DFFFF /* SwiftUINavigation in Frameworks */ = {isa = PBXBuildFile; productRef = 8B7167A72875F0F6009DFFFF /* SwiftUINavigation */; };
+		98F202E52892C38B00F061F5 /* YellowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F202E42892C38B00F061F5 /* YellowView.swift */; };
+		98F202E72892C39F00F061F5 /* YellowSwiftFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F202E62892C39F00F061F5 /* YellowSwiftFile.swift */; };
+		98F202EA2892C6E100F061F5 /* YellowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F202E92892C6E100F061F5 /* YellowCoordinator.swift */; };
+		98F202EC2892C6F800F061F5 /* YellowCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F202EB2892C6F800F061F5 /* YellowCoordinatorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +40,10 @@
 		8B1EB456286B866A00D755AF /* RedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedView.swift; sourceTree = "<group>"; };
 		8B1EB45A286B8F4D00D755AF /* RedCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedCoordinator.swift; sourceTree = "<group>"; };
 		8B1EB45C286B8F5800D755AF /* RedCoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedCoordinatorView.swift; sourceTree = "<group>"; };
+		98F202E42892C38B00F061F5 /* YellowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowView.swift; sourceTree = "<group>"; };
+		98F202E62892C39F00F061F5 /* YellowSwiftFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowSwiftFile.swift; sourceTree = "<group>"; };
+		98F202E92892C6E100F061F5 /* YellowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowCoordinator.swift; sourceTree = "<group>"; };
+		98F202EB2892C6F800F061F5 /* YellowCoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowCoordinatorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +105,7 @@
 		8B1EB446286B809800D755AF /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				98F202E32892C37500F061F5 /* Yellow */,
 				8B1EB449286B80AF00D755AF /* Main */,
 				8B1EB450286B84CD00D755AF /* Blue */,
 				8B1EB453286B864F00D755AF /* Red */,
@@ -124,6 +133,7 @@
 		8B1EB44B286B812E00D755AF /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				98F202E82892C6C700F061F5 /* YellowCoordinator */,
 				8B1EB458286B8C7D00D755AF /* MainCoordinator */,
 				8B1EB459286B8F3C00D755AF /* RedCoordinator */,
 			);
@@ -163,6 +173,24 @@
 				8B1EB45C286B8F5800D755AF /* RedCoordinatorView.swift */,
 			);
 			path = RedCoordinator;
+			sourceTree = "<group>";
+		};
+		98F202E32892C37500F061F5 /* Yellow */ = {
+			isa = PBXGroup;
+			children = (
+				98F202E42892C38B00F061F5 /* YellowView.swift */,
+				98F202E62892C39F00F061F5 /* YellowSwiftFile.swift */,
+			);
+			path = Yellow;
+			sourceTree = "<group>";
+		};
+		98F202E82892C6C700F061F5 /* YellowCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				98F202E92892C6E100F061F5 /* YellowCoordinator.swift */,
+				98F202EB2892C6F800F061F5 /* YellowCoordinatorView.swift */,
+			);
+			path = YellowCoordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,12 +272,16 @@
 			files = (
 				8B1EB437286B7F9800D755AF /* MainView.swift in Sources */,
 				8B1EB44F286B814E00D755AF /* MainCoordinatorView.swift in Sources */,
+				98F202EA2892C6E100F061F5 /* YellowCoordinator.swift in Sources */,
+				98F202EC2892C6F800F061F5 /* YellowCoordinatorView.swift in Sources */,
 				8B1EB44D286B813E00D755AF /* MainCoordinator.swift in Sources */,
 				8B1EB45D286B8F5800D755AF /* RedCoordinatorView.swift in Sources */,
 				8B1EB435286B7F9800D755AF /* SwiftUINavigationExampleApp.swift in Sources */,
 				8B1EB452286B84F200D755AF /* BlueView.swift in Sources */,
 				8B1EB45B286B8F4D00D755AF /* RedCoordinator.swift in Sources */,
+				98F202E52892C38B00F061F5 /* YellowView.swift in Sources */,
 				8B1EB448286B80A700D755AF /* MainViewModel.swift in Sources */,
+				98F202E72892C39F00F061F5 /* YellowSwiftFile.swift in Sources */,
 				8B1EB457286B866A00D755AF /* RedView.swift in Sources */,
 				8B1EB455286B866300D755AF /* RedViewModel.swift in Sources */,
 			);

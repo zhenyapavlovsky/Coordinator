@@ -16,12 +16,15 @@ class RedCoordinator: ObservableObject {
 
     var onResult: ((Result) -> Void)?
 
-    enum Route {}
+    enum Route {
+        case yellowScreen (yellowCoordinator: YellowCoordinator)
+    }
 
     @Published var route: Route? // nil - red screen
 
     var viewModel: RedViewModel
-
+    
+    
     init(viewModel: RedViewModel) {
         self.viewModel = viewModel
         viewModel.onResult = { [weak self] result in
@@ -31,9 +34,18 @@ class RedCoordinator: ObservableObject {
                     self?.onResult?(.navigateBack)
                 }
             case .shouldOpenYellowScreen:
-                // TODO: implement navigation logic to the Yellow screen
-                break
+                self?.moveToYellowScreen()
             }
         }
+    }
+    func moveToYellowScreen(){
+        let yellowScreen = YellowCoordinator(viewModel: YellowSwiftFile())
+        yellowScreen.onResult = { [weak self] result in
+            switch result {
+            case .navigationBack:
+                self?.route = nil
+            }
+        }
+        route = .yellowScreen(yellowCoordinator: yellowScreen)
     }
 }
